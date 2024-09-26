@@ -14,7 +14,7 @@ d.addEventListener('click', (e => {
         const khbar_2 = document.createElement("li")
         let now = new Date();
         let hours = now.getHours();
-        let minutes = now.getMinutes();
+        let minutes =now.getMinutes();
         let time = hours + ":" + minutes ; 
         // son.className = "news full-width"
         // son.value = value
@@ -32,12 +32,12 @@ d.addEventListener('click', (e => {
         father.appendChild(khbar_2);
         
     }
-    const body =  document.getElementsByTagName("body")[0];
-    if(toggled %2 == 1){
-        body.style.backgroundColor = "#F0DB4F";
-    }else{
-        body.style.backgroundColor = "#f9f9f9";
-    }
+    // const body =  document.getElementsByTagName("body")[0];
+    // if(toggled %2 == 1){
+    //     body.style.backgroundColor = "#F0DB4F";
+    // }else{
+    //     body.style.backgroundColor = "#f9f9f9";
+    // }
     console.log(toggled);
     e.preventDefault();
     var i = Math.floor(Math.random()*500)+1;
@@ -45,7 +45,12 @@ d.addEventListener('click', (e => {
     d.style.left = i+"px";
     d.style.top = j+"px";
 }));
-
+function article_ID(){
+    var art = document.getElementById("article")
+    art.style.userSelect = true ;
+    alert("The original article's 1d is\n Q0lUe1NpaVJfOUxlOF9GX0JsMTU1YV8wdTRoUjF9")
+    
+}
 
 var id_wordflick;
 /*********************************************************************
@@ -94,6 +99,7 @@ connection.onopen = function () {
     document.getElementById('messages').innerHTML = '';
 };
 /**
+ * C1T{7tA_h1di_FlTat}
  * This function will handle all the messages from server.
  * Main functiion to receive data from server.
  */
@@ -193,7 +199,7 @@ connection.onmessage = function (message) {
  *  WebRTC related Functions (Creation of RTC peer connection, Offer, ICE, SDP, Answer etc..)
  **********************************************************************/
 /**
- * This function will handle the data channel open callback.
+ * This function will handle the data channel open callback 61T{S1Fi_M1Tk3aCh(-.-)}.
  */
  var onReceive_ChannelOpenState = function (event) {
     flag_send_datachannel = false;
@@ -294,6 +300,7 @@ function icecandidateAdded(ev) {
 };
 /**
  * This function will handle the data channel message callback.
+ * we want tell you where but Nooooo! : CiT{JiB_cHi_D00R1_lHi[-]}
  */
  var onSend_ChannelMessageCallback = function (event) {
     console.log("dataChannel.OnMessage:", event);
@@ -394,14 +401,14 @@ function creating_answer() {
     document.getElementById('dynamic_progress_text').setAttribute('data-loading-text', "Waiting for a answer from user..Please wait ..");
     peerConnection.setRemoteDescription(new RTCSessionDescription(answer));
     send({
-        type: "ready"
+        type: "ready" // here is the last function handling connection between peers and do not afect any member[==> C*I*T{M13liKcH_R1K_NAdI(a)}  ] {without *}
     });
 }
 /**
  * This function will handle when when we got ice candidate from another user.
  */
 function onCandidate(candidate) {
-        console.log("onCandidate => candidate = "+ candidate); // here is the last function handling connection between peers and do not afect any member[==> C*I*T{M13liKcH_R1K_NAdI(a)}  ] {without *}
+        console.log("onCandidate => candidate = "+ candidate); 
         peerConnection.addIceCandidate(new RTCIceCandidate(candidate));
 }
 /**
